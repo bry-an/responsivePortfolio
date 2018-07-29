@@ -1,0 +1,85 @@
+$primary-font: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+$header-font:'Georgia', 'Times', 'Times New Roman', 'serif'; 
+$teal: #4aaaa5;
+$gray-border: #777777;
+$font-color: #777777;
+
+.header {
+    margin-top: 10px;
+}
+.bryan {
+    background-color: $teal;
+}
+
+h1 {
+    color: white;
+    font-family: $header-font;
+    margin-bottom: 0;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: $primary-font;
+    color: $font-color;
+}
+
+.nav {
+    min-height: 100%;
+    min-width: 211px;
+}
+
+.click {
+    font-family: $primary-font;
+    color: $font-color;
+    min-height: 100%;
+    margin: 20px 0 0 3px;
+    text-align: center;
+    min-width: 24px;
+}
+
+.click.no-border {
+    border: none;
+}
+
+hr {
+    margin: 0;
+}
+.main-content {
+    background-color: white;
+    font-family: $primary-font;
+    border: 0.5px solid #dddddd;
+    padding: 10px;
+}
+
+
+.background {
+    background-image: url("../images/bkgd.png");
+    background-repeat: repeat;
+    padding: 35px 0 100px 0;
+}
+
+h2 {
+    color: $teal;
+    font-family: $header-font;
+}
+
+.headshot {
+    margin-right: 10px;
+}
+.footer-trim {
+    background-color: $teal;
+    height: 8px;
+}
+
+.main-footer {
+    background-color: #666666;
+    text-align: center;
+    color: #dddddd;
+    padding-top: 15px;
+}
+@media (min-width: 550px) {
+    .click {
+    border-right: 1px solid #777777;
+    }
+}
