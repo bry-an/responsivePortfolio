@@ -9,6 +9,7 @@ $font-color: #777777;
 }
 .bryan {
     background-color: $teal;
+    text-align: center;
 }
 
 h1 {
@@ -36,6 +37,7 @@ a {
     margin: 20px 0 0 3px;
     text-align: center;
     min-width: 24px;
+    padding-bottom: 10px;
 }
 
 .click.no-border {
@@ -44,8 +46,9 @@ a {
 
 hr {
     margin: 0;
+    color: #cccccc;
 }
-.main-content {
+.box {
     background-color: white;
     font-family: $primary-font;
     border: 0.5px solid #dddddd;
@@ -57,6 +60,7 @@ hr {
     background-image: url("../images/bkgd.png");
     background-repeat: repeat;
     padding: 35px 0 100px 0;
+    min-height: calc(100vh - 100px);
 }
 
 h2 {
@@ -64,8 +68,40 @@ h2 {
     font-family: $header-font;
 }
 
+.main-content {
+    margin-top: 20px;
+}
 .headshot {
     margin-right: 10px;
+}
+
+.portfolio-gallery {
+    padding-top: 20px;
+}
+.portfolio-image {
+    position: relative;
+    min-width: 290px;
+    margin-left: 15%;
+}
+
+.p-image-caption {
+    color: white;
+    background-color: $teal;
+    padding-bottom: 10px;
+    position: absolute;
+    bottom: 15px;
+    width: 240px;
+    font-family: $header-font;
+    text-align: center;
+    padding: 10px 0 10px 0;
+}
+input[type="text"], textarea {
+    width: 100%;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
 }
 .footer-trim {
     background-color: $teal;
@@ -81,5 +117,18 @@ h2 {
 @media (min-width: 550px) {
     .click {
     border-right: 1px solid #777777;
+    padding-bottom: 0;
+    }
+    .bryan {
+        text-align: left;
+    }
+    .portfolio-image {
+        margin: 0;
+    }
+}
+
+@media (min-width: 925) {
+    .portfolio-image {
+        margin: 0;
     }
 }
